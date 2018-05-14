@@ -96,6 +96,12 @@ int main(int argc, char* argv[]){
 	printarray(c,dim);
 	puts("x");
 	printarray(x,dim);
+	for(i=0;i<dim;i++){
+        free(A[i]);
+        free(L[i]);
+        free(U[i]);
+    }
+
 	return 0;
 }
 void printmatrix(double *p[], int d){
