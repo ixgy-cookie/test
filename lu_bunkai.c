@@ -97,9 +97,10 @@ int main(int argc, char* argv[]){
 	puts("x");
 	printarray(x,dim);
 	for(i=0;i<dim;i++){
-        free(A[i]);
-        free(L[i]);
-        free(U[i]);
+            free(A[i]);
+            free(L[i]);
+            free(U[i]);
+	}
     }
 
 	return 0;
